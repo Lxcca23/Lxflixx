@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS 5.1.3 - 04/2022 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fontawesome 6.1.1 - 04/2022 -->
+
+    <!-- Fonte do texto -->
+
+    <title>LXFLIX</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Barra de navegação superior -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img class="navbar-brand" src="imagens/LOGO.png" alt="logo" width="100" height="50">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!-- href temporario -->
+                            <a class="nav-link active" aria-current="page" href="#lancamentos">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- href temporario -->
+                            <a class="nav-link" href="#destaques">Em destaque</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- href temporario -->
+                            <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- href temporario -->
+                            <a class="nav-link" href="#novidades">Novidades</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar filme"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bloco de Lançamento -->
+        <div class="container main">
+            <h2 class="lancamentos" id="lancamentos">Lançamentos</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+
+                    <!-- 1 Filme -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row" style="margin-bottom: 35px;">
+                                <div class="col-xs-12 col-12 col-md-6" style="min-height: 294px;">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Rf8LAYJSOL8"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6">
+                                    <p1 height="100% ">
+
+                                    </p1>
+                                    <p></p>
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            Diretor: Sam Raimi
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            Roteiro: Michael Waldron
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            Elenco: Benedict Cumberbatch, Elizabeth Olsen, Benedict Wong, Xochitl Gomez
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        Estreia: 05/05/2022
+                                    </div>
+
+                                    <div class="col-12">
+                                        Avaliação: 7,3/10 (IMDB)
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 Filme.... , replicar o filme 1 4x-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco de Destaque -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="destaques" id="destaques">Em destaque</h2>
+                </div>
+                <div class="col-6">
+                    <div class="dropdown" style="text-align: right;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoria: TODOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"></a>  AÇÃO</li>
+                            <li><a class="dropdown-item" href="#"></a>  FICÇÃO</li>
+                            <li><a class="dropdown-item" href="#"></a>  DRAMA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <img src="imagens/filme1.jpg" class="card-img-top" alt="filme1">
+                        <div class="card-body">
+                            <p class="card-text"><b>DOUTOR ESTRANHO: AS IMPOSSIBILIDADES SÃO INFINITAS</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <img src="imagens/filme2.jpg" class="card-img-top" alt="filme1">
+                        <div class="card-body">
+                            <p class="card-text"><b>ANIMAIS FANTÁSTICOS: OS SEGREDOS DE DUMBLEDORE</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <img src="imagens/filme3.jpg" class="card-img-top" alt="filme1">
+                        <div class="card-body">
+                            <p class="card-text"><b>THE BATMAN</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <img src="imagens/filme4.jpg" class="card-img-top" alt="filme1">
+                        <div class="card-body">
+                            <p class="card-text"><b>TOP GUN>: MAVERICK</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais filmes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco de Avaliação pelos Usuários -->
+        <div class="container">
+            <h2 class="avaliacoes" id="avaliacoes">Últimas avaliações</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="profile-header-container">
+                                    <img class="img-circle" src="imagens/profile1.png" height="100%" width="100%" />
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h6>Jefferson</h6>
+                                <p><b>Avaliação:</b> (Doutor Estranho 2) Perfeito como entretenimento e ensaio sobre a
+                                    loucura. Feiticeira Escarlate é a real protagonista na sua luta insana por ser quem
+                                    ela não é, mas uma versão em outro universo é. América Chavez tem papel central por
+                                    não ter versões de si mesma e estar apenas em um universo, podendo se transportar
+                                    para outros. Como tem 2 mães, a sua origem é ainda mais incerta. Muita loucura e
+                                    delírio. Trilha sonora e efeitos visuais magnificos. Obra prima.</p>
+                                <p>★★★★★ - 07/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="profile-header-container">
+                                    <img class="img-circle" src="imagens/profile2.png" height="100%" width="100%" />
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h6>Claudia</h6>
+                                <p><b>Avaliação:</b> (THE BATMAN) Excelente roteiro, ator principal e coadjuvantes.
+                                    Pattinson manda bem, embora eu mesmo não esperasse, sombrio, rústico, refém de
+                                    Alfred e Gordon como figuras paternas e morais. O filme o mostra evoluindo da
+                                    vingança para a esperança, uma Mulher Gato muito determinada e um vilão de pimeira,
+                                    o Charada e a expectativa de ascenção do Pinguim. Não perca! Nada cansativo. Boas
+                                    recordações do Batman grande detetive furtivo dos anos 60 que aprisionava e embolava
+                                    os capangas dos vilões,mas desta vez nada pop.</p>
+                                <p>★★★★★ - 10/05/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="profile-header-container">
+                                    <img class="img-circle" src="imagens/profile3.png" height="100%" width="100%" />
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h6>Jin Ho</h6>
+                                <p><b>Avaliação:</b> (TOP GUN: MAVERICK) no mais de 50 anos e acompanhei os momentos
+                                    históricos do original e continuação. Um dos melhores filmes que já assisti, pois é
+                                    uma continuação com elementos de romance, fortes emoções e adrenalina a mil. O
+                                    desafio de realizar uma missão mais impossível do que as realizadas pelo Tom Cruise
+                                    nesta famosa série e com forte conexão entre os personagens. Tom Cruise magnífico e
+                                    estupendo, mais maduro e com uma fotografia meio vintage. Demais.</p>
+                                <p>★★★★★ - 19/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais avaliações</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco de Entrevistas & Making of -->
+        <div class="container">
+            <h2 class="entrevistas" id="entrevistas">Entrevistas & Making of</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pUXF-qXVIMY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HFWfvjME6vA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/COCJXKkewh4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <p><b>Filme:</b> TOP GUN: MAVERICK<br>
+
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p><b>Filme:</b>DOUTOR ESTRANHO NO MULTIVERSO DA LOUCURA<br>
+
+                    </p>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p><b>Filme:</b> ANIMAIS FANTÁSTICOS: OS SEGREDOS DE DUMBLEDORE<br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais filmes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco de Entrevistas & Making of -->
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="novidades" id="novidades">Novidades</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-11 col-md-4">
+                                <img height="100%" width="100%" src="imagens/imagem1.png" alt="imagem1">
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6">
+                                <h5>JURASSIC WORLD: DOMÍNIO
+                                </h5>
+                                <p>Em Jurassic World Domínio, sequência direta do longa de 2018, - Jurassic World: Reino
+                                    Ameaçado - quatro anos após a destruição da Ilha Nublar, os dinossauros agora vivem
+                                    - e caçam - ao lado de humanos em todo o mundo. Contudo, nem todos répteis consegue
+                                    viver em harmonia com a espécie humana, trazendo problemas graves. Esse frágil
+                                    equilíbrio remodelará o futuro e determinará, de uma vez por todas, se os seres
+                                    humanos continuarão sendo os principais predadores em um planeta que agora
+                                    compartilham com as criaturas mais temíveis da história em uma nova era. Os
+                                    ex-funcionários do parque dos dinossauros, Claire (Bryce Dallas Howard) e Owen
+                                    (Chris Pratt) se envolvem nessa problemática e buscam uma solução, contando com a
+                                    ajuda dos cientistas experientes em dinossauros, que retornam dos filmes
+                                    antecessores. Capítulo final da trilogia iniciada por Jurassic World - O Mundo dos
+                                    Dinossauros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="margin-top: 10px;">
+                        <div class="row">
+                            <div class="ol-xs-12 col-11 col-md-4">
+                                <img height="100%" width="100%" src="imagens/imagem2.jpg" alt="imagem1">
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6">
+                                <h5>A HORA DO DESESPERO
+                                </h5>
+                                <p>Em A Hora do Desespero, uma mãe recentemente viúva, Amy Carr, está fazendo o possível
+                                    para restaurar a normalidade na vida de sua filha e de seu filho adolescente em sua
+                                    pequena cidade do interior. Enquanto ela está fazendo sua corrida matinal na
+                                    floresta, ela encontra sua cidade no caos quando um tiroteio ocorre na escola de seu
+                                    filho. A quilômetros de distância, a pé na floresta densa, Amy corre
+                                    desesperadamente contra o tempo para salvar seu filho. Superando lesões enquanto faz
+                                    o que pode para sair do local, enquanto manda várias chamadas telefônicas e
+                                    mensagens de texto na esperança de descobrir se sua filha Emily (Sierra Maltby) e
+                                    seu filho adolescente Noah (Colton Gobbo) estão seguros. Mas sem sinal e com poucas
+                                    informações, jogadas por policias e jornalistas, que conseguiu no caminho, Amy se vê
+                                    em um dilema de mãe: Seria meu filho um assassino dentro de sua própria escola?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="margin-top: 10px; margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="ol-xs-12 col-11 col-md-4">
+                                <img height="100%" width="100%" src="imagens/imagem3.jfif" alt="imagem1">
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6">
+                                <h5>LIGHTYEAR
+                                </h5>
+                                <p>Uma aventura de ação de ficção científica e a história de origem definitiva de Buzz
+                                    Lightyear, o herói que inspirou o brinquedo em Toy Story (1995). Lightyear segue o
+                                    lendário Patrulheiro Espacial depois que em um teste de voo da nave espacial faz com
+                                    que ele vá para um planeta hostil e fique abandonado a 4,2 milhões de anos-luz da
+                                    Terra ao lado de seu comandante e sua tripulação. Enquanto Buzz tenta encontrar um
+                                    caminho de volta para casa através do espaço e do tempo, ele descobre que já se
+                                    passaram muitos anos desde seu teste de voo e que os descendentes de seus amigos, um
+                                    grupo de recrutas ambiciosos, e seu charmoso gato companheiro robô, Sox. Para
+                                    complicar as coisas e ameaçar a missão está a chegada de Zurg, uma presença
+                                    alienígena imponente com um exército de robôs implacáveis e uma agenda misteriosa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco de Sobre -->
+                <div class="col-4">
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="footertext">© 2022 Copyright: Desenvolvimento de Interfaces Web -
+                <b>ICEI PUC MINAS</b>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Javascript 2.10 - 04/2022 -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>-->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
